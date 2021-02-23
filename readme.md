@@ -15,9 +15,9 @@ NOTES:
 
 2. Express provides you with middleware to deal with the (incoming) data (object) in the body of the request.
 
-  a. express.json() is a method inbuilt in express to recognize the incoming Request Object as a JSON Object. This method is called as a middleware in your application using the code: app.use(express.json());
+  - express.json() is a method inbuilt in express to recognize the incoming Request Object as a JSON Object. This method is called as a middleware in your application using the code: app.use(express.json());
 
-  b. express.urlencoded() is a method inbuilt in express to recognize the incoming Request Object as strings or arrays. This method is called as a middleware in your application using the code: app.use(express.urlencoded());
+  - express.urlencoded() is a method inbuilt in express to recognize the incoming Request Object as strings or arrays. This method is called as a middleware in your application using the code: app.use(express.urlencoded());
 
 3. You DO NOT NEED body-parser or middleware like express.json() and express.urlencoded() for GET/DELETE Requests. So when USING these think specifically about POST/PUT Requests.
 
